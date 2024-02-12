@@ -9,49 +9,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-          <h5>Room 1:</h5>
+    <div class="container" id="container_1">
+        <div id="container" class="container">
+            <div class="row d-flex justify-content-center">
+              <h5>Room</h5>
+            </div>
+        <div id="addadult">
+            <div class="row text-center">
+                <div class="col">
+                  <h6>Adult</h6> <p>above 12 years</p>
+                </div>
+                <div class="col">
+                  <h6>child</h6> <p>below 12 years</p>
+                </div>
+              </div>
+              <div class="row">
+                  <div id="one" class="col">
+                      <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div id="one" class="col">
+                      <button class="btn btn-danger">-</button>
+                  </div>
+                  <div id="one" class="col">
+                      <input type="text" v-model="adult_count">
+                  </div>
+                  <div id="one" class="col">
+                      <button class="btn btn-danger">+</button>
+                  </div>
+                  <div id="one" class="col">
+                      <i class="bi bi-person-plus"></i>
+                  </div>
+                  <div id="one" class="col">
+                      <button class="btn btn-danger">-</button>
+                  </div>
+                  <div id="one" class="col">
+                      <input type="text" v-model="adult_count">
+                  </div>
+                  <div id="one" class="col">
+                      <button class="btn btn-danger">+</button>
+                  </div>
+              </div>
+              </div>
         </div>
-        <div class="row text-center">
-          <div class="col">
-            <h6>Adult</h6> <p>above 12 years</p>
-          </div>
-          <div class="col">
-            <h6>child</h6> <p>below 12 years</p>
-          </div>
-        </div>
-        <div class="row">
-            <div id="one" class="col">
-                <i class="bi bi-person-fill"></i>
-            </div>
-            <div id="one" class="col">
-                <button class="btn btn-danger">-</button>
-            </div>
-            <div id="one" class="col">
-                <input type="text" v-model="adult_count">
-            </div>
-            <div id="one" class="col">
-                <button class="btn btn-danger">+</button>
-            </div>
-            <div id="one" class="col">
-                <i class="bi bi-person-plus"></i>
-            </div>
-            <div id="one" class="col">
-                <button class="btn btn-danger">-</button>
-            </div>
-            <div id="one" class="col">
-                <input type="text" v-model="adult_count">
-            </div>
-            <div id="one" class="col">
-                <button class="btn btn-danger">+</button>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <button type="button" class="btn btn-outline-danger btn-sm">Add room</button>
-        </div> 
-        </div>
+            <br>
+            <div class="row">
+               <div class="col justify-content-center d-flex">
+                <button id="addroom" type="button" class="btn btn-outline-danger btn-sm">Add room</button>
+               </div>
+               <div class="col justify-content-center d-flex">
+                <button id="subroom" type="button" class="btn btn-outline-danger btn-sm">Remove room</button>
+               </div>
+            </div> 
+
+    </div>
 
 
 
